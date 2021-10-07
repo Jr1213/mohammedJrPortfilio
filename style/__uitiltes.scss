@@ -1,0 +1,52 @@
+@import './_colors';
+.container {
+    margin: 0 auto;
+    max-width: 85%;
+}
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+.btn {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    padding: .5rem 2rem;
+    color: $black-color;
+    cursor: pointer;
+    transition: 250ms all ease-in-out;
+    border-radius: 50px;
+
+}
+.btn-main {
+    border: $black-color 2px solid;
+    &:hover {
+        background-color: $secondery-color;
+        color: $white-color;
+        border-color: $secondery-color;
+    }
+}
+
+.btn-outline-main {
+    background-color: $secondery-color;
+    width: fit-content;
+    color: $white-color;
+    border: solid 2px transparent;
+    &:hover {
+        border: solid 2px $secondery-color;
+        background-color: transparent;
+        color: $secondery-color;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .btn{
+        font-size: 2rem;
+    }
+}
