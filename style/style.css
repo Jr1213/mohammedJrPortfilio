@@ -565,6 +565,11 @@ footer {
   }
   #projects .container .projects-list .project .project-img {
     width: 100%;
+    padding: 1rem;
+  }
+  #projects .container .projects-list .project .project-img img {
+    display: block;
+    width: 95%;
   }
   #projects .container .projects-list .project .project-content {
     width: 100%;
